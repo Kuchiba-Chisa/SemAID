@@ -1,0 +1,25 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.5
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: inpainting
+  mask_opt:
+      mask_type: semantic                # Use semantic mask (based on saliency)
+      base_mask_ratio: 0.70              # Base mask ratio for logging
+      mask_prob_range: [0.70, 0.71]      # Initial range, will be adjusted dynamically at runtime
+      image_size: 256
+      dynamic_mask: True                 # Whether to dynamically adjust mask ratio based on complexity
+      edge_aware: True                   # Whether to enable edge protection (ensure edges are not masked)
+      edge_strength: 1.0                 # Edge protection strength (used in mask_generator)
+      edge_adjust_strength: 2.0          # Edge adjustment strength, used to adjust mask ratio
+
+  noise:
+    name: gaussian
+    sigma: 0.05
