@@ -1,6 +1,8 @@
 # SemAID: Semantic-Aware Image Transmission via Adaptive Non-Uniform Sampling and Diffusion-Based Posterior Estimation
 
-![img](/home/mxxie/SemAID/figures/SemAID.pdf)
+![SemAID Overview](figures/SemAID.jpg)
+
+## 🎉 Our paper has been accepted by ICC
 
 ## Abstract
 The paradigm of semantic communication prioritizes the recovery of semantically meaningful information over pixel-level fidelity, which is crucial for bandwidth-constrained and extreme environments such as deep-space exploration and disaster response. However, existing deep learning-based approaches often rely on task-specific training and struggle with the compound distortion of aggressive compression and severe channel noise. In this paper, we formulate semantic-aware image transmission as a signal recovery problem from incomplete and noisy measurements, guided by semantic importance. We propose SemAID, a novel framework that integrates an adaptive, semantic-driven non-uniform sampler at the transmitter and a generative diffusion-based Bayesian estimator at the receiver. The transmitter dynamically masks pixels based on saliency and edge information, effectively implementing content-aware compression. The receiver, leveraging a pre-trained diffusion model as a strong generative prior, solves the corresponding inverse problem via posterior sampling without any retraining. Extensive experiments demonstrate that SemAID achieves superior performance in both perceptual quality and reconstruction fidelity under low-SNR conditions, showcasing remarkable generalization across varying channel states and unseen data distributions. This work validates the potent efficacy of generative priors for semantic signal recovery under the compound challenge of non-uniform sampling and channel noise, offering a practical zero-shot solution for extreme communication environments.
