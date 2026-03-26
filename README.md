@@ -133,7 +133,7 @@ If you use this code in your research, please cite our paper:
   title={SemAID: Semantic-Aware Image Transmission via Adaptive Non-Uniform Sampling and Diffusion-Based Posterior Estimation},
   author={...},
   journal={ICC},
-  year={2025}
+  year={2026}
 }
 ```
 Also acknowledge the original DPS method:
