@@ -1,4 +1,4 @@
-# SemAID: Semantic-Aware Image Transmission via Adaptive Non-Uniform Sampling and Diffusion-Based Posterior Estimation
+# SemAID: Zero-Shot Semantic-Aware Image Communication with Adaptive Sampling and Diffusion-based Signal Recovery
 
 ![SemAID Overview](figures/SemAID.jpg)
 
@@ -129,23 +129,23 @@ Works zero-shot – no retraining required for new tasks or channel conditions.
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@article{...,
-  title={SemAID: Semantic-Aware Image Transmission via Adaptive Non-Uniform Sampling and Diffusion-Based Posterior Estimation},
-  author={...},
-  journal={ICC},
-  year={2026}
+@inproceedings{semaid2026,
+  title={SemAID: Zero-Shot Semantic-Aware Image Communication with Adaptive Sampling and Diffusion-based Signal Recovery},
+  author={Mingxuan Xie and Zhongsheng Fang and Nan Cheng},
+  booktitle={IEEE International Conference on Communications},
+  year={2026},
+  note={Accepted, to appear}
 }
 ```
 Also acknowledge the original DPS method:
 
 ```bibtex
-@inproceedings{
-chung2023diffusion,
-title={Diffusion Posterior Sampling for General Noisy Inverse Problems},
-author={Hyungjin Chung and Jeongsol Kim and Michael Thompson Mccann and Marc Louis Klasky and Jong Chul Ye},
-booktitle={The Eleventh International Conference on Learning Representations},
-year={2023},
-url={https://openreview.net/forum?id=OnD9zGAGT0k}
+@inproceedings{chung2023diffusion,
+  title={Diffusion Posterior Sampling for General Noisy Inverse Problems},
+  author={Hyungjin Chung and Jeongsol Kim and Michael Thompson Mccann and Marc Louis Klasky and Jong Chul Ye},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023},
+  url={https://openreview.net/forum?id=OnD9zGAGT0k}
 }
 ```
 ## 📧 Contact
